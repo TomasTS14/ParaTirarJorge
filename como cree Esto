@@ -1,0 +1,259 @@
+s4tr4@s4tr4-VirtualBox:~$ cd Desktop/EjrGithub/
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub$ ls
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub$ ls -a
+.  ..  .metadata  .sonarlint
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub$ git clone git@github.com:TomasTS14/ProgramacionAlumnos.git
+Cloning into 'ProgramacionAlumnos'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (7/7), done.
+Receiving objects: 100% (9/9), done.
+Resolving deltas: 100% (1/1), done.
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub$ ls 
+ProgramacionAlumnos
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub$ cd ProgramacionAlumnos/
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ ls
+README.md  utilidad.md
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ ls
+README.md  utilidad.md
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ touch "archivoNuevo">archivoASubir.txt
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ ls
+archivoASubir.txt  archivoNuevo  README.md  utilidad.md
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	archivoASubir.txt
+	archivoNuevo
+
+nothing added to commit but untracked files present (use "git add" to track)
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ ls
+archivoASubir.txt  archivoNuevo  README.md  utilidad.md
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ rm archivoNuevo 
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ ls
+archivoASubir.txt  README.md  utilidad.md
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ nano archivoASubir.txt 
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano archivoASubir.txt
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.archivoASubir.txt.swp
+	archivoASubir.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/ProgramacionAlumnos$ cd ~
+s4tr4@s4tr4-VirtualBox:~$ cd Desktop/
+s4tr4@s4tr4-VirtualBox:~/Desktop$ cd Ejr
+EjrClase/  EjrGithub/ 
+s4tr4@s4tr4-VirtualBox:~/Desktop$ cd EjrClase/
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrClase$ ls
+CDsOptativo                  Personas               Readme.md
+comparacionLinkedyArrayList  PilaPalabras           Tema4_Objetos
+Ejr6_T5_TomasT               PilaPalabrasArrayList
+Ejr7_T5_TomasT               Pruebas
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrClase$ cp Ejr6_T5_TomasT/ ../Ejr
+EjrClase/  EjrGithub/ 
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrClase$ cp Ejr6_T5_TomasT/ ../EjrGithub/
+cp: -r not specified; omitting directory 'Ejr6_T5_TomasT/'
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrClase$ cp -r Ejr6_T5_TomasT/ ../EjrGithub/
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrClase$ ls
+CDsOptativo                  Personas               Readme.md
+comparacionLinkedyArrayList  PilaPalabras           Tema4_Objetos
+Ejr6_T5_TomasT               PilaPalabrasArrayList
+Ejr7_T5_TomasT               Pruebas
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrClase$ cd ../EjrGithub/
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub$ ls
+Ejr6_T5_TomasT  ProgramacionAlumnos
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub$ cd Ejr6_T5_TomasT/
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/s4tr4/Desktop/EjrGithub/Ejr6_T5_TomasT/.git/
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ ls -a
+.  ..  bin  .classpath  .git  .gitignore  .project  .settings  src
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.classpath
+	.gitignore
+	.project
+	.settings/
+	src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git add .classpath .project src/ 
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .classpath
+	new file:   .project
+	new file:   src/ArrayProducto.java
+	new file:   src/Producto.java
+	new file:   src/pruebaArrayProducto.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	.settings/
+
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git remote add origin git@github.com:TomasTS14/ParaTirarJorge.git
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git remote -v
+origin	git@github.com:TomasTS14/ParaTirarJorge.git (fetch)
+origin	git@github.com:TomasTS14/ParaTirarJorge.git (push)
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git commit -m"Agregue lo primero"
+[master (root-commit) 9e637e0] Agregue lo primero
+ 5 files changed, 219 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 src/ArrayProducto.java
+ create mode 100644 src/Producto.java
+ create mode 100644 src/pruebaArrayProducto.java
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	.settings/
+
+nothing added to commit but untracked files present (use "git add" to track)
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git remote -v
+origin	git@github.com:TomasTS14/ParaTirarJorge.git (fetch)
+origin	git@github.com:TomasTS14/ParaTirarJorge.git (push)
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git push 
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git branch
+* master
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 5 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 2.41 KiB | 615.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:TomasTS14/ParaTirarJorge.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ echo "Hola" > hola.txt
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git diff origin master
+fatal: ambiguous argument 'origin': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git diff master origin/master
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	.settings/
+	hola.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git add hola.txt 
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   hola.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	.settings/
+
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git commit -m"primer commit"
+[master fe6d49d] primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hola.txt
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git diff master origin/master
+diff --git a/hola.txt b/hola.txt
+deleted file mode 100644
+index a19abfe..0000000
+--- a/hola.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-Hola
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git push 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 5 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 336 bytes | 336.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:TomasTS14/ParaTirarJorge.git
+   9e637e0..fe6d49d  master -> master
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git pull 
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+Unpacking objects: 100% (3/3), 651 bytes | 651.00 KiB/s, done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+From github.com:TomasTS14/ParaTirarJorge
+   fe6d49d..231d482  master     -> origin/master
+Updating fe6d49d..231d482
+Fast-forward
+ adios.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 adios.txt
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ ls
+adios.txt  bin  hola.txt  src
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ cat adios.txt 
+adios 
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	.settings/
+
+nothing added to commit but untracked files present (use "git add" to track)
+s4tr4@s4tr4-VirtualBox:~/Desktop/EjrGithub/Ejr6_T5_TomasT$ 
